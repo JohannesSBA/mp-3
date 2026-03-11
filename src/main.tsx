@@ -4,8 +4,6 @@ import { createGlobalStyle } from "styled-components";
 import App from "./App.tsx";
 
 const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
-
   * {
     margin: 0;
     box-sizing: border-box;
