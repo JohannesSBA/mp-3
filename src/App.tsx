@@ -36,6 +36,7 @@ function Root() {
       <StyledContainer>
         <Nav />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/documents/home.html" element={<Home />} />
           <Route path="/documents/education.html" element={<Educations />} />
           <Route path="/documents/experience.html" element={<Experience />} />
