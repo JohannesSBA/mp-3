@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import johannesImg from "../assets/johannes.jpeg";
 
 const StyledMain = styled.main`
   padding: 20px 30px 30px;
@@ -54,7 +55,7 @@ export default function Home() {
       <title>Home | Resume</title>
       <h3>Main</h3>
       <BodyWrapper>
-        <img src="../src/assets/johannes.jpeg" alt="Johannes Bekele" />
+        <img src={johannesImg} alt="Johannes Bekele" />
         <p>
           My name is Johannes Bekele. I am a computer science student at Boston
           University studying Computer Science. I am in my last semester of my

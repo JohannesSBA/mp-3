@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import bostonUniversityImg from "../assets/bostonUniversity.png";
+import fordhamUniversityImg from "../assets/fordhamUnivesity.png";
 
 const StyledMain = styled.main`
   padding: 20px 30px 30px;
@@ -65,7 +67,7 @@ export default function Educations() {
       <EducationWrapper>
         <Education>
           <img
-            src="../src/assets/bostonUniversity.png"
+            src={bostonUniversityImg}
             alt="boston university logo"
           />
           <EducationInfo>
@@ -78,7 +80,7 @@ export default function Educations() {
         </Education>
         <Education>
           <img
-            src="../src/assets/fordhamUnivesity.png"
+            src={fordhamUniversityImg}
             alt="Fordham university logo"
           />
           <EducationInfo>
