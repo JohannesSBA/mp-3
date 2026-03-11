@@ -1,8 +1,59 @@
+import styled from "styled-components";
+
+const StyledMain = styled.main`
+  padding: 20px 30px 30px;
+  width: 70%;
+  background-color: #f4faf7;
+  font-size: calc(16px + 0.1vw);
+  min-height: 85vh;
+
+  h3 {
+    font-size: calc(17.6px + 0.3vw);
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 200px;
+    max-height: fit-content;
+    border-radius: 8px;
+    margin: 10px 0 20px;
+    display: block;
+    padding: 5px;
+  }
+
+  p {
+    line-height: 1.6;
+    padding-top: 20px;
+  }
+
+  @media (max-width: 750px) {
+    width: 100%;
+
+    h3 {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+`;
+
+const BodyWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 export default function Home() {
   return (
-    <main>
+    <StyledMain>
+      <title>Home | Resume</title>
       <h3>Main</h3>
-      <div id="body-wrapper">
+      <BodyWrapper>
         <img src="../src/assets/johannes.jpeg" alt="Johannes Bekele" />
         <p>
           My name is Johannes Bekele. I am a computer science student at Boston
@@ -13,7 +64,7 @@ export default function Home() {
           development and constantly strive to improve my skills by learning new
           technologies and frameworks.
         </p>
-      </div>
+      </BodyWrapper>
       <p>
         I apply my analytical and problem-solving skills to find robust
         solutions. By understanding the needs and requirements of users, I
@@ -32,6 +83,6 @@ export default function Home() {
         discovering new restaurants in New York, and playing competitive video
         games.
       </p>
-    </main>
+    </StyledMain>
   );
 }
